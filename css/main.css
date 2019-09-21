@@ -1,0 +1,48 @@
+* { margin: 0.5; box-sizing: border-box; } 
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: 'Playfair Display';
+    color: #5B0932;
+}
+
+h1 {
+    color: #FFEBEF;
+}
+
+h2 {
+    text-align: left;
+    border-bottom: 1px solid #FFEBEF;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 100%;
+    width: 75%;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color: #F9485D;
+    color: #FFEBEF;
+    width: 75%;
+    border-radius: 10px;
+}
+
+main {
+    text-align: left;
+}
+
+header img {
+    width: 20%;
+    height: auto;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+footer {
+    font-size: 11px;
+}
