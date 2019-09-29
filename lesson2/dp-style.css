@@ -1,0 +1,110 @@
+body{
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "source sans pro light", sans-serif;
+}
+
+header{
+    background-color: #EFA0B5;
+    padding: 10px;
+}
+
+#title, #subtitle{
+    text-align:center;
+    color: #5D5B60;
+}
+
+#title{
+    font-size: 2.5em;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #A02B4A;
+
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #A02B4A;
+    
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #EFA0B5;
+    
+  }
+  
+  /* selected link */
+  a:active {
+    color: #A02B4A;
+    text-decoration:none;
+  }
+
+
+main{
+    background-color: #5D5B60;
+    color: #5D5B60;
+    padding:10px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Abril Fatface', "source sans pro light", serif;
+    font-weight: normal;
+}
+
+#adobe, #hm, #tjmaxx{
+    padding: 14px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer{
+    margin-top:0px;
+    padding:10px;
+    background-color: #EFA0B5;
+    text-align:center;
+
+}
+
+#images{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#copyright{
+    color: #5D5B60;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    justify-content: center;
+  }
+
+.examples {
+    background-color: #FFF8EF;
+    height: 1200px;
+    width: 330px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+p, a{
+    padding-right: 5px;
+    padding-left: 8px;
+}
+
+.subheader{
+    background-color: #EFA0B5;
+    color: #5D5B60;
+    padding:10px;
+}
