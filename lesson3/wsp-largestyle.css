@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+@media only screen  and (min-width : 1224px) {
+body {
+    background-color: #FFFCD6;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1E1E1E;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, footer {
+	margin: 10px auto;
+	background-color: #ff6f4f;
+	border: 1px solid #1E1E1E;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+#site-name{
+    color: #FFEE59;
+    font-size: 3em;
+    text-shadow: #1E1E1E 2px 2px 2px;
+
+}
+
+#motto{
+    font-size: 1em;
+    margin: -10px;
+    
+}
+
+
+nav{
+    background-color:#FFA544;
+    padding:5px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+
+}
+
+a:active{
+    background-color: #FFEE59;
+    
+}
+
+nav ul li{
+    padding:10px;
+}
+
+#logo{
+    max-width:120px;
+    margin-left: -700px;
+    margin-top: -180px;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+}
+}
+
+h1{
+    text-shadow: #1E1E1E 1px 1px 1px;
+    color: #FFA544;
+}
+
