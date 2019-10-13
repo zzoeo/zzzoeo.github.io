@@ -130,31 +130,32 @@ h2 {text-align: center;}
 }
 
 
-.topnav {
-    overflow: hidden;
-    position: relative;
-  }
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
 
+.responsive li {
+	display: block;
+}
 
-.topnav #menulinks {
-    display: none;
-  }
-
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  
-  .active {
-    background-color: #4CAF50;
-    color: white;
-  }
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+        flex: 1 1 100%;
+    }
+}
