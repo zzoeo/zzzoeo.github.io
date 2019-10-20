@@ -3,7 +3,6 @@
 @media only screen  and (min-width : 1224px) {
 body {
     background-color: #FFFCD6;
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     color: #1E1E1E;
@@ -13,11 +12,14 @@ body {
 header, footer {
 	margin: 10px auto;
 	background-color: #ff6f4f;
-	border: 1px solid #1E1E1E;
+    border: 1px solid #1E1E1E;
+    width: 100%;
 	box-shadow: 0 0 30px #777;
     text-align: center;
     font-family: 'Playfair Display', serif;
-
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 0.25rem 9999rem;
 }
 
 #site-name{
@@ -107,7 +109,7 @@ h2 {text-align: center;}
 }
 
 
-  .navigation {
+.navigation {
 	list-style: none;
 	text-align: center;
 	padding: 0;
@@ -146,4 +148,32 @@ h2 {text-align: center;}
     margin: 5px;
     width: 7rem;
     text-align: center;
+}
+
+#article{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+#contactinfo{
+    padding: 10px;
+    text-align: center;
+}
+
+#prestonarticle{
+    padding: 10px;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+#contactinfo {
+    margin-top: 15px;
 }
