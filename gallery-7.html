@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Gallery Page by Zoe Esplin Wright for CIT 230: Web Frontend Development at BYU-I">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="normalize.css" type="text/css" rel="stylesheet" />
+    <link href="css/gallery-7-largestyle.css" type="text/css" rel="stylesheet" />
+    <link href="css/gallery7-smallstyle.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/preston.js"></script>
+    <title>Sunny Days Ahead | Weather Gallery</title>
+</head>
+<body>
+    <header>
+        <h1 id="site-name">Sunny Days Ahead</h1>
+        <div id="motto">
+            <h3>Your local weather source for finding the sunny days ahead!</h3>
+        </div>
+        <img id="logo" src="images/sun-logo.png" alt="Sunny Days Ahead Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="preston-4.html" class="active">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            
+            <div class="gallery">
+                        <figure class="gallery__item gallery__item--1">
+                            <img src="images/weather1-sunny.jpg" class="gallery__img" alt="sunnyday">
+                            <figcaption>A beautiful, sunny day</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--2">
+                            <img src="images/weather3-rainbow.jpg" class="gallery__img" alt="rainbow">
+                            <figcaption>The rainbow after the storm</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--3">
+                            <img src="images/weather4-fog.jpg" class="gallery__img" alt="fog">
+                            <figcaption>Fog in the forest</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--4">
+                            <img src="images/weather9-lightning.jpg" class="gallery__img" alt="lightning">
+                            <figcaption>A lightning storm</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--5">
+                            <img src="images/weather5-snow.jpg" class="gallery__img" alt="snow">
+                            <figcaption>Bright and snowy day</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--6">
+                            <img src="images/weather7-clearday.jpg" class="gallery__img" alt="clearday">
+                            <figcaption>Sunset on a clear day</figcaption>
+                          </figure>
+                          <figure class="gallery__item gallery__item--7">
+                            <img src="images/weather8-storm.jpg" class="gallery__img" alt="storm">
+                            <figcaption>An imminent storm</figcaption>
+                            </figure>
+                            <figure class="gallery__item gallery__item--8">
+                            <img src="images/weather2-stormclouds.jpg" class="gallery__img" alt="stormclouds">
+                            <figcaption>Distant stormclouds</figcaption>
+                            </figure>
+                            <figure class="gallery__item gallery__item--9">
+                            <img src="images/weather6-snowstorm.jpg" class="gallery__img" alt="snowstorm">
+                            <figcaption>A massive snowfall</figcaption>
+                            </figure>
+            </div>
+
+        </main>
+        <footer>
+           <p> &copy; Sunny Days Ahead 2019</p>
+        </footer>
+        <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                      families: [
+                         'Playfair Display'
+                      ]
+                    }
+                  });
+            </script>
+    </body>
+    </html>
