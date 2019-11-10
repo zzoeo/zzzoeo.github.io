@@ -177,3 +177,8 @@ input, textarea{
 #comments {
     height: 10em;
 }
+
+#thanks {
+    font-size: 1.5em;
+    text-align: center;
+}
