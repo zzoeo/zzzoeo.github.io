@@ -94,7 +94,7 @@ h2 {text-align: center;}
 
 .herodiv {margin: 10px auto;position: relative;}
 
-.weatherstats {
+.stats {
     position: absolute;
 	top: 25px;
     margin-left: 20px;
@@ -123,7 +123,7 @@ h2 {text-align: center;}
 
 .herodiv {margin: 10px auto;position: relative;}
 
-.weatherstats {
+.stats {
     position: absolute;
 	top: 25px;
     margin-left: 20px;
@@ -164,17 +164,19 @@ h2 {text-align: center;}
     }
 }
 
-.temp {
-    border-style: solid 1px;
-    border-color: black;
-    padding: 10px;
-    display: inline-block;
+table {
     background-color: #FFA544;
-    margin: 5px;
-    width: 7rem;
     text-align: center;
+    width: 100%;
 }
 
+table, th, td {
+    border: 1px solid black;
+  } 
+
+th, td {
+    padding: 20px;
+}
 
 #article{
     display: flex;
@@ -209,4 +211,9 @@ html, body {
 
 #contactinfo {
     margin-top: 15px;
+}
+
+#article, #contact {
+    border: 1px solid black;
+    padding: 10px;
 }
