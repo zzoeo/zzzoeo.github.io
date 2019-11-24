@@ -189,7 +189,7 @@ th, td {
     margin-bottom: 25px;
 }
 
-#contactinfo{
+.contactinfo{
     padding: 10px;
     text-align: center;
 }
@@ -200,12 +200,6 @@ th, td {
 
 html, body {
     overflow-x: hidden;
-  }
-
-  @media only screen and (max-width: 768px) {
-      #contact, #forecast {
-          display: hidden;
-      }
   }
 
 
