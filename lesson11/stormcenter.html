@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Gallery Page by Zoe Esplin Wright for CIT 230: Web Frontend Development at BYU-I">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="normalize.css" type="text/css" rel="stylesheet" />
+    <link href="css/storm-largestyle.css" type="text/css" rel="stylesheet" />
+    <link href="css/storm-smallstyle.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/preston.js"></script>
+    <script src="js/lazy.load.js"></script>
+    <title>Sunny Days Ahead | Weather Gallery</title>
+</head>
+<body>
+    <header>
+        <h1 id="site-name">Sunny Days Ahead</h1>
+        <div id="motto">
+            <h3>Your local weather source for finding the sunny days ahead!</h3>
+        </div>
+        <img id="logo" src="images/sun-logo.png" alt="Sunny Days Ahead Logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="preston-4.html" class="active">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <h1>Storm Center</h1>
+            <form action="thankyou.html">
+                
+                <fieldset>
+                    <legend class="legends">Your Information</legend>
+                Full Name: *<br>
+                <input id="input" type="text" name="fullName" pattern="[A-Z a-z]{5,}" required>
+                <br>
+             
+                <label for="email">Email:<br>
+                <input id="input" type="email" name="email" placeholder="user@email.org"></label><br>
+              
+                <label>Phone: *<br>
+                <input id="input" type="tel" name="phone" placeholder="###-###-####" required>
+                </label><br>
+
+              <label for="num">Zip Code: *<br>
+                <input id="input" type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label><br>
+           
+            </fieldset>
+
+            <fieldset>
+                <legend class="legends">Storm Information</legend>
+                <label for="date">Storm Date:<br>
+                  <input id="input" type="date" name="stormdate"></label><br>
+
+                  <label for="stormtype">Storm Type:<br>
+                        <input id="input" name="stormtype" list="stormtypelist"></label>
+                            <datalist id="stormtypelist">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                        <br>
+                
+                        <label for="rating">Rating: <br> &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="ratingvalue" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue"></span> 
+                    </label><br>
+            
+                        <datalist id="tickmarks">
+              <option value="0">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+              <option value="6">
+              <option value="7">
+              <option value="8">
+              <option value="9">
+              <option value="10">
+            </datalist><br>
+
+            <label for="regions">Storm Region:<br>
+                    <input id="input" name="regions" list="regionlist"></label>
+                        <datalist id="regionlist">
+                        <option value="Preston">
+                        <option value="Soda Springs">
+                        <option value="Fish Haven">
+                    </datalist><br>
+              
+              <fieldset>
+                    <legend>Are you in danger? <em>(Choose one)</em></legend>
+                    <div class="selection">
+                        <label for="answer1"><input id="input" type="radio" name="answer" value="yes" checked>Yes</label>
+                    </div>
+                    <div class="selection">
+                        <label for="answer2"><input id="input" type="radio" name="answer" value="maybe">Maybe</label>
+                    </div>
+                    <div class="selection">
+                        <input id="input" type="radio" name="answer" value="no">
+                        <label for="answer3">No</label>
+                    </div>
+                </fieldset>
+        
+            </fieldset>
+
+            <fieldset>
+            <label class="tellUs">Additional Comments:<br>
+                <textarea id="comments" name="comments" placeholder="Type your comments here..."></textarea></label>
+            </fieldset>
+
+            <input type="submit" id="submit" value="SUBMIT STORM REPORT" >
+        </form>
+
+        </main>
+        <footer>
+           <p> &copy; Sunny Days Ahead 2019</p>
+        </footer>
+        <script src="stormcenter.js"></script>
+        <script src="js/windchill.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                      families: [
+                         'Playfair Display'
+                      ]
+                    }
+                  });
+            </script>
+    </body>
+    </html>
