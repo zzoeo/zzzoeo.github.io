@@ -193,3 +193,39 @@ input, textarea{
     font-size: 1.5em;
     text-align: center;
 }
+
+@media only screen and (min-width: 32.5em) {
+
+section{
+    width: 100%;
+}
+.townstats {
+    padding: 20px;
+    background: #FFA544;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 15em;
+    padding: 10px;
+}
+
+h4 {
+    font-style: italic;
+}
+
+p, h4 {
+    text-align: center;
+}
+#idahoweather {
+    text-align: left;
+}
+
+#about {
+    border: solid black 1px;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+}
