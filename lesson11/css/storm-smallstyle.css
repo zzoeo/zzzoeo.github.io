@@ -139,18 +139,13 @@ html, body {
     overflow-x: hidden;
   }
 
-  @media only screen and (max-width: 768px) {
-      #contact, #forecast {
-          display: hidden;
-      }
-  }
 
   fieldset {
     width: 60%;
     padding: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-style: solid #1E1E1E 1px;
+    border: solid #1E1E1E 1px;
     border-radius: 10px;
 }
 
@@ -173,7 +168,7 @@ input, textarea{
     width: 17em;
     height:2em;
     border-radius: 5px;
-    border-style: solid #1E1E1E 1px;
+    border: solid #1E1E1E 1px;
 }
 
 .legends {
