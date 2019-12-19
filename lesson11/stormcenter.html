@@ -44,24 +44,24 @@
                 <br>
              
                 <label for="email">Email:<br>
-                <input type="email" name="email" placeholder="user@email.org"></label><br>
+                <input type="email" id="email" name="email" placeholder="user@email.org"></label><br>
               
                 <label>Phone: *<br>
                 <input type="tel" name="phone" placeholder="###-###-####" required>
                 </label><br>
 
               <label for="num">Zip Code: *<br>
-                <input type="number" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label><br>
+                <input type="tel" id="num" name="num" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-code" required></label><br>
            
             </fieldset>
 
             <fieldset>
                 <legend class="legends">Storm Information</legend>
                 <label for="date">Storm Date:<br>
-                  <input type="date" name="stormdate"></label><br>
+                  <input type="date" id="date" name="stormdate"></label><br>
 
                   <label for="stormtype">Storm Type:<br>
-                        <input name="stormtype" list="stormtypelist"></label>
+                        <input name="stormtype" id="stormtype" list="stormtypelist"></label>
                             <datalist id="stormtypelist">
                             <option value="Flash Flood">
                             <option value="Hail">
@@ -72,8 +72,8 @@
                         <br>
                 
                         <label for="rating">Rating: <br> &nbsp;&nbsp;&nbsp;
-                    <input type="range" id="ratingvalue" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="ratingvalue"></span> 
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="rating"></span> 
                     </label><br>
             
                         <datalist id="tickmarks">
@@ -91,7 +91,7 @@
             </datalist><br>
 
             <label for="regions">Storm Region:<br>
-                    <input name="regions" list="regionlist"></label>
+                    <input name="regions" id="regions" list="regionlist"></label>
                         <datalist id="regionlist">
                         <option value="Preston">
                         <option value="Soda Springs">
@@ -101,10 +101,10 @@
               <fieldset>
                     <legend>Are you in danger? <em>(Choose one)</em></legend>
                     <div class="selection">
-                        <label for="answer1"><input id="input" type="radio" name="answer" value="yes" checked>Yes</label>
+                        <label for="answer1"><input type="radio" name="answer" value="yes" checked>Yes</label>
                     </div>
                     <div class="selection">
-                        <label for="answer2"><input id="input" type="radio" name="answer" value="maybe">Maybe</label>
+                        <label for="answer2"><input type="radio" name="answer" value="maybe">Maybe</label>
                     </div>
                     <div class="selection">
                         <input type="radio" name="answer" value="no">
