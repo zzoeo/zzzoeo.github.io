@@ -140,7 +140,7 @@ html, body {
 
   @media only screen and (max-width: 768px) {
       #contact, #forecast {
-          display: hidden;
+          display: none;
       }
   }
 
