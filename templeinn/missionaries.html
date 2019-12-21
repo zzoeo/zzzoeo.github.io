@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites Missionaries Page by Zoe Esplin Wright for CIT 230: Web Frontend Development at BYU-I">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index-large.css" type="text/css" rel="stylesheet" />
+    <link href="css/index-small.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Temple Inn & Suites | Missionaries</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="banner">
+        <img src="images/clouds.jpg" alt="clouds banner">
+        <div id="motto"></div>
+            <img id="logo" src="images/templelogo.png" alt="Temple Inn & Suites Logo">
+        </div>
+        <h1 id="site-name">Temple Inn & Suites</h1>
+    </div>
+    </header>
+        <main>
+            <h1>Full-Time Temple Missionary Accommodations</h1>
+            <section id="missionary">
+                <p>Temple Inn & Suites offers long-term stay accommodations in kitchenette suites for full-time temple missionaries. With our close proximity to the temple, it is a great option for temple missionaries. Pictured is an example of an extended stay kitchenette suite. Fill out the contact form below to inquire about availability. We always love having missionaries stay at Temple Inn & Suites!</p>
+                <img src="images/suite.jpg" alt="kitchenette suite">
+            </section>
+            <form action="thankyou.html">
+                    <fieldset>
+                            <legend class="legends">Accommodation Inquiries</legend>
+                        Full Name: *<br>
+                        <input type="text" name="fullName" pattern="[A-Z a-z]{5,}" required>
+                        <br>
+                     
+                        <label for="email">Email: *<br>
+                        <input type="email" id="email" name="email" placeholder="user@email.org" required></label><br>
+                      
+                        <label>Phone: *<br>
+                        <input type="tel" name="phone" placeholder="###-###-####" required>
+                        </label><br>
+                
+                    <label class="tellUs">Message:<br>
+                        <textarea id="comments" name="comments" placeholder="List your accommodation inquiry here..."></textarea></label>
+                    </fieldset>
+        
+                    <input type="submit" id="submit" value="Submit Message" >
+                </form>
+        </main>
+        <footer>
+           <p> &copy; Temple Inn & Suites 2019</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                      families: [
+                         'Playfair Display'
+                      ]
+                    }
+                  });
+            </script>
+    </body>
+    </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Inn & Suites Reservations Page by Zoe Esplin Wright for CIT 230: Web Frontend Development at BYU-I">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/index-large.css" type="text/css" rel="stylesheet" />
+    <link href="css/index-small.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Temple Inn & Suites | Reservations</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="banner">
+        <img src="images/clouds.jpg" alt="clouds banner">
+        <div id="motto"></div>
+            <img id="logo" src="images/templelogo.png" alt="Temple Inn & Suites Logo">
+        </div>
+        <h1 id="site-name">Temple Inn & Suites</h1>
+    </div>
+    </header>
+        <main>
+            <h1>Make a Reservation</h1>
+            <form action="thankyou.html">
+    
+                <fieldset>
+                    <legend class="legends">Booking Information</legend>
+                    <label for="date">Check-In Date: *<br>
+                      <input type="date" id="date" name="checkin" required></label><br>
+                      <label for="date2">Check-Out Date: *<br>
+                        <input type="date" id="date2" name="checkout" required></label><br>
+
+                        <label for="location">Location: *<br>
+                            <input name="location" id="location" list="locationlist" required></label>
+                                <datalist id="locationlist">
+                                <option value="Guayaquil, Ecuador">
+                                <option value="Portland, Oregon">
+                                <option value="Provo, Utah">
+                                <option value="Hong Kong, China">
+                                <option value="Tijuana, Mexico">
+                                <option value="Orlando, Florida">
+                                <option value="Philadelphia, Pennsylvania">
+                                <option value="Aba, Nigeria">
+                                <option value="Sacramento, California">
+                                <option value="Lima, Peru">
+                                <option value="Meridian, Idaho">
+                                <option value="Washington, D.C.">
+                                <option value="Las Vegas, Nevada">
+                                <option value="Bern, Switzerland">
+                                <option value="Tokyo, Japan">
+                                <option value="Mesa, Arizona">
+                                <option value="Mexico City, Mexico">
+                                <option value="Bangkok, Thailand">
+                                <option value="Suva, Fiji">
+                                
+                            </datalist><br>
+
+                        <fieldset>
+                                <legend>How many rooms? <em>(Groups larger than three rooms, please call to reserve)</em></legend>
+                                <div class="selection">
+                                    <label for="answer1"><input type="radio" id="answer1" name="answer" value="yes" checked>One</label>
+                                </div>
+                                <div class="selection">
+                                    <label for="answer2"><input type="radio" id="answer2" name="answer" value="maybe">Two</label>
+                                </div>
+                                <div class="selection">
+                                    <label for="answer3"><input type="radio" id="answer3" name="answer" value="no">Three</label>
+                                </div>
+                            </fieldset>
+    
+                      <label for="roomtype">Room Type:<br>
+                            <input name="roomtype" id="roomtype" list="roomtypelist"></label>
+                                <datalist id="roomtypelist">
+                                <option value="Studio - 1 King">
+                                <option value="Studio - 2 Queens">
+                                <option value="1 Bedroom Suite - 1 King + Couch">
+                                <option value="1 Bedroom Suite - 2 Queens + Couch">
+                                <option value="2 Bedroom Suite - 2 Kings + Couch">
+                                <option value="2 Bedroom Suite - 1 King + 2 Queens + Couch ">
+                            </datalist>
+                            <br>
+                </fieldset>
+
+                <fieldset>
+                        <legend class="legends">Your Information</legend>
+                    Full Name: *<br>
+                    <input type="text" name="fullName" pattern="[A-Z a-z]{5,}" required>
+                    <br>
+                 
+                    <label for="email">Email: *<br>
+                    <input type="email" id="email" name="email" placeholder="user@email.org" required></label><br>
+                  
+                    <label>Phone: *<br>
+                    <input type="tel" name="phone" placeholder="###-###-####" required>
+                    </label><br>
+    
+                  <label for="state">Home State or Country: *<br>
+                    <input type="text" name="state" required>
+                    <br>
+               
+                </fieldset>
+    
+                <fieldset>
+                <label class="tellUs">Additional Comments or Requests:<br>
+                    <textarea id="comments" name="comments" placeholder="Type your comments here..."></textarea></label>
+                </fieldset>
+    
+                <input type="submit" id="submit" value="Submit Reservation" >
+            </form>
+    
+        </main>
+        <footer>
+           <p> &copy; Temple Inn & Suites 2019</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                      families: [
+                         'Playfair Display'
+                      ]
+                    }
+                  });
+            </script>
+    </body>
+    </html>
