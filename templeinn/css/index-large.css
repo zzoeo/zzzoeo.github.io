@@ -19,6 +19,7 @@ header, footer {
 footer {
     height: 70px;
     padding-top: 15px;
+    display: inline-block;
 }
 
 .banner {
@@ -215,7 +216,7 @@ input, textarea{
     padding-left: 10px;
   }
 
-  .servicelinks {
+  .servicelinks, #sources {
     text-decoration: underline #222222;
   }
 
@@ -242,3 +243,7 @@ input, textarea{
   #serviceslist li {
       line-height: 2.25em;
   }
+
+ #sources {
+     margin-bottom: 30px;
+ }
