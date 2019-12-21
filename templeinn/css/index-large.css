@@ -53,7 +53,7 @@ nav{
     margin-top: -30px;
 }
 
-li {
+nav ul li {
     display: inline-block;
   }
 
@@ -199,6 +199,7 @@ input, textarea{
 #serviceslist {
     border: solid 2px #FFBCCF;
     padding: 10px;
+    padding-left: 30px;
 }
 
   #receptions, #missionary {
@@ -236,4 +237,8 @@ input, textarea{
   #lisbon {
       width: 400px;
       height: 340px;
+  }
+
+  #serviceslist li {
+      line-height: 2.25em;
   }
