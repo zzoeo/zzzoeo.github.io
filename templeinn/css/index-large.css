@@ -196,10 +196,6 @@ input, textarea{
     width: 60%;
 }
 
-ul, li {
-    list-style: circle outside #222222;
-}
-
 #serviceslist {
     border: solid 2px #FFBCCF;
     padding: 10px;
